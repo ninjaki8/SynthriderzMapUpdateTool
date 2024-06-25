@@ -1,0 +1,2 @@
+C:\Users\ninjaki8\source\repos\SynthriderzMapUpdateTool\bin\Release\net8.0\publish\win-x64\SynthriderzMapUpdateTool.pdb
+C:\Users\ninjaki8\source\repos\SynthriderzMapUpdateTool\bin\Release\net8.0\publish\win-x64\SynthriderzMapUpdateTool.exe
