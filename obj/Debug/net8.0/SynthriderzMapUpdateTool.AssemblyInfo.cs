@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SynthriderzMapUpdateTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0182145f85de47eec8e50693f5fa73e7b2e224c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51870cb39e951d01489bc1a5e5d6e7d50ce64a9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SynthriderzMapUpdateTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SynthriderzMapUpdateTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
