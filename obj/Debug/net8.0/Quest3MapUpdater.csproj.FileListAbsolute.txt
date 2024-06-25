@@ -1,3 +1,0 @@
-C:\Users\ninjaki8\source\repos\ConsoleApp1\bin\Debug\net8.0\adb.exe
-C:\Users\ninjaki8\source\repos\ConsoleApp1\bin\Debug\net8.0\AdbWinApi.dll
-C:\Users\ninjaki8\source\repos\ConsoleApp1\bin\Debug\net8.0\AdbWinUsbApi.dll

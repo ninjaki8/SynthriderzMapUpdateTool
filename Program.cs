@@ -2,7 +2,7 @@
 using SynthriderzMapUpdateTool;
 
 // Console setup
-new ConsoleSetup("Synthriders Custom Songs Update CLI Tool");
+var console = new ConsoleSetup("Synthriders Custom Songs Update CLI Tool");
 
 // App info
 AnsiConsole.Write(new FigletText("Synthriderz.com").Centered().Color(Color.Purple));
@@ -28,7 +28,7 @@ var adbDevices = deviceManager.GetAdbDevices();
 if (adbDevices.Count == 0)
 {
     AnsiConsole.MarkupLineInterpolated($"[red][[SYS]][/] No devices connected");
-    return;
+    console.ExitApplication();
 }
 AnsiConsole.MarkupLineInterpolated($"[mediumpurple2][[LOG]][/] [green]Found {adbDevices.Count} connected device(s), awaiting user selection...[/]");
 
@@ -45,7 +45,7 @@ var device = deviceManager.GetDeviceByModel(deviceModel);
 if (!device)
 {
     AnsiConsole.MarkupLine("[red][[SYS]][/] {0} Not Found!", deviceModel);
-    return;
+    console.ExitApplication();
 }
 
 AnsiConsole.MarkupLineInterpolated($"[mediumpurple2][[LOG]][/] [green]{deviceModel} selected[/]");
@@ -59,7 +59,7 @@ await AnsiConsole.Status()
         if (string.IsNullOrEmpty(customSongsPath))
         {
             AnsiConsole.MarkupLine("[red][[SYS]][/] Folder not found!");
-            return;
+            console.ExitApplication();
         }
         elapsedMilliseconds = TimeMeasurement.ElapsedMilliseconds();
         AnsiConsole.MarkupLineInterpolated($"[mediumpurple2][[LOG]][/] [green]Custom songs folder found[/] [mediumpurple2]{elapsedMilliseconds}[/]");
@@ -100,6 +100,4 @@ await AnsiConsole.Status()
         AnsiConsole.MarkupLine("[mediumpurple2][[LOG]][/] [green]You are up to date! Have a nice day :)[/]");
     });
 
-AnsiConsole.MarkupLineInterpolated($"[grey50]---------------------------------------------------------------[/]");
-AnsiConsole.MarkupLineInterpolated($"[red][[SYS]][/] Done! Press any key to close this window...");
-var input = Console.ReadKey(true);
+console.ExitApplication();

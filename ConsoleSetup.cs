@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using Spectre.Console;
+using System.Runtime.InteropServices;
 
 namespace SynthriderzMapUpdateTool
 {
@@ -33,6 +34,14 @@ namespace SynthriderzMapUpdateTool
             // hide scrollbar
             Console.SetWindowSize(111, 35);
             Console.SetBufferSize(111, 35);
+        }
+
+        public void ExitApplication()
+        {
+            AnsiConsole.MarkupLineInterpolated($"[grey50]---------------------------------------------------------------[/]");
+            AnsiConsole.MarkupLineInterpolated($"[red][[SYS]][/] Press any key to close this window...");
+            var input = Console.ReadKey(true);
+            Environment.Exit(0);
         }
     }
 }
