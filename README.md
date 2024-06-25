@@ -8,6 +8,6 @@ Console application created with .net 8 that downloads custom beatmaps from synt
 - Parallel downloading for fetching beatmaps
 - Simple & Fast
 
-[Download](https://github.com/ninjaki8/SynthriderzMapUpdateTool/releases/tag/win-x64)
+[Download](https://github.com/ninjaki8/SynthriderzMapUpdateTool/releases/download/win-x64/SynthriderzMapUpdateTool.exe)
 
 
